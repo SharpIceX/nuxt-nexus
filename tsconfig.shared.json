@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		/* 基础配置 */
+		"pretty": true,
+		"types": ["node"],
+
+		/* 构建 */
+		"sourceMap": true,
+		"noEmitOnError": true,
+		"inlineSources": true,
+
+		/* 检查 */
+		"checkJs": true,
+		"alwaysStrict": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"strictNullChecks": true,
+		"noImplicitReturns": true,
+		"noUnusedParameters": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"noImplicitUseStrict": false,
+		"exactOptionalPropertyTypes": true,
+		"useUnknownInCatchVariables": true,
+		"noFallthroughCasesInSwitch": true,
+		"strictPropertyInitialization": true,
+		"forceConsistentCasingInFileNames": true,
+		"noPropertyAccessFromIndexSignature": true
+	}
+}

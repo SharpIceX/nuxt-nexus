@@ -1,0 +1,42 @@
+{
+	"name": "nuxt-nexus",
+	"type": "module",
+	"version": "1.0.0-alpha.1",
+	"license": "MIT",
+	"main": "./dist/module.mjs",
+	"repository": "github:SharpIceX/nuxt-nexus",
+	"homepage": "https://github.com/SharpIceX/nuxt-nexus",
+	"description": "Turn any file format into a Nuxt page with custom compilers and Nuxt 4 metadata pre-scanning support ",
+	"keywords": [
+		"nuxt"
+	],
+	"bugs": {
+		"email": "SharpIce@SharpIce.top",
+		"url": "https://github.com/SharpIceX/nuxt-nexus/issues"
+	},
+	"author": {
+		"name": "SharpIce",
+		"url": "https://SharpIce.top",
+		"email": "SharpIce@SharpIce.top"
+	},
+	"files": [
+		"./dist",
+		"./LICENSE"
+	],
+	"scripts": {
+		"clean": "rimraf ./dist",
+		"build": "nuxt-module-build build",
+		"dev": "nuxt-module-build build --stub",
+		"postinstall": "nuxt-module-build prepare && nuxt-module-build build --stub"
+	},
+	"dependencies": {
+		"@nuxt/kit": "^4.3.1",
+		"unplugin": "^3.0.0"
+	},
+	"devDependencies": {
+		"@nuxt/module-builder": "^1.0.2",
+		"@nuxt/schema": "^4.3.1",
+		"nuxt": "^4.3.1",
+		"rimraf": "^6.1.3"
+	}
+}

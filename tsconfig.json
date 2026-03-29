@@ -1,0 +1,14 @@
+{
+	"files": [],
+	"references": [
+		{
+			"path": "./packages/module/tsconfig.json"
+		},
+		{
+			"path": "./packages/playground-common/tsconfig.json"
+		},
+		{
+			"path": "./packages/playground-vite/tsconfig.json"
+		}
+	]
+}

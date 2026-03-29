@@ -1,0 +1,17 @@
+{
+	"name": "nuxt-nexus-playground-common",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"clean": "rimraf ./dist",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"@nuxtjs/seo": "^3.4.0",
+		"nuxt": "^4.3.1",
+		"nuxt-nexus": "workspace:*"
+	},
+	"devDependencies": {
+		"rimraf": "^6.1.3"
+	}
+}

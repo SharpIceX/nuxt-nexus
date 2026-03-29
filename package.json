@@ -1,0 +1,31 @@
+{
+	"name": "nuxt-nexus-module",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"onFail": "error"
+		},
+		"packageManager": {
+			"name": "pnpm",
+			"onFail": "error"
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"format": "prettier . --write"
+	},
+	"devDependencies": {
+		"@nuxt/eslint-config": "^1.15.2",
+		"@types/node": "^25.5.0",
+		"eslint": "^10.1.0",
+		"eslint-config-prettier": "^10.1.8",
+		"jiti": "^2.6.1",
+		"prettier": "^3.8.1",
+		"typescript": "~5.9.3"
+	}
+}
