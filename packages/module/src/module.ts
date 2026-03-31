@@ -4,7 +4,6 @@ import { defineNuxtModule, addBuildPlugin, useLogger } from '@nuxt/kit';
 import { createNexusTransformPlugin } from './builder/plugin/transform';
 
 const regExpVue = /\.vue$/;
-
 const logger = useLogger('nuxt-nexus');
 
 export default defineNuxtModule<ModuleOptions>({

@@ -50,4 +50,4 @@ interface ModuleOptions {
 	loader?: LoaderOption[];
 }
 
-export type { LoaderOption, ModuleOptions };
+export type { LoaderOption, ModuleOptions, NexusPageMeta };
