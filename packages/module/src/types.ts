@@ -1,7 +1,7 @@
 import type { Rollup } from 'vite';
-import type { PageMeta } from '#app';
+import type { PageMeta } from 'nuxt/app';
 
-// TODO ! 这个类型不对，要拿到包含等 Layout 等扩展类型
+// TODO ? 可能 IDE 的智能提示会失效，但可能仍可进行`跳转到类型定义`
 type NexusPageMeta = Omit<PageMeta, 'meta' | '_sync' | 'file'> & {
 	[key: string]: unknown;
 };
