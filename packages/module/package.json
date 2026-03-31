@@ -1,7 +1,7 @@
 {
 	"name": "nuxt-nexus",
 	"type": "module",
-	"version": "1.0.0-alpha.1",
+	"version": "1.0.0-rc1",
 	"license": "MIT",
 	"main": "./dist/module.mjs",
 	"repository": "github:SharpIceX/nuxt-nexus",
