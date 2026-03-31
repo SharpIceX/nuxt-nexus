@@ -66,6 +66,7 @@ export default defineNuxtModule<ModuleOptions>({
 			nuxt.options.vite.vue.include = [...new Set([...includeArray, ...includesRegExp])];
 		}
 
+		/*
 		// Webpack 构建器
 		if (nuxt.options.builder === '@nuxt/webpack-builder') {
 			nuxt.hook('webpack:config', (configs) => {
@@ -85,6 +86,7 @@ export default defineNuxtModule<ModuleOptions>({
 				}
 			});
 		}
+		*/
 
 		// 元数据扫描
 		nuxt.addHooks(createScanPageMetaHook(options, includesSet));
