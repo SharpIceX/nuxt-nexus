@@ -10,6 +10,13 @@ export default defineNuxtModule<ModuleOptions>({
 	meta: {
 		name: 'nuxt-nexus',
 		configKey: 'nexus',
+		compatibility: {
+			nuxt: '^4.0.0',
+			builder: {
+				webpack: false,
+				rspack: false,
+			},
+		},
 	},
 	setup(options, nuxt) {
 		const loaders = options.loader;

@@ -5,13 +5,6 @@ disallowWorkspaceCycles: true
 packages:
   - packages/**
 
-# TODO 依赖锁定
-overrides:
-  nuxt: '4.3.1'
-  '@nuxt/rspack-builder': '4.3.1'
-  '@nuxt/webpack-builder': '4.3.1'
-  '@nuxt/vite-builder': '4.3.1'
-
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
