@@ -13,10 +13,10 @@ interface LoaderOption {
 	 * @example
 	 * ```ts
 	 * // Single pattern
-	 * include: "md"
+	 * extensions: "md"
 	 *
 	 * // Multiple patterns
-	 * include: ["md", "adoc"]
+	 * extensions: ["md", "adoc"]
 	 * ```
 	 */
 	extensions: string | string[];

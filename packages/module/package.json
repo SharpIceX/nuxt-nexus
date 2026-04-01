@@ -38,11 +38,12 @@
 		"unplugin": "^3.0.0"
 	},
 	"peerDependencies": {
-		"vue": "^3.0.0",
-		"nuxt": "^4.0.0"
+		"nuxt": "^4.0.0",
+		"vue": "^3.0.0"
 	},
 	"devDependencies": {
 		"@nuxt/module-builder": "^1.0.2",
+		"@nuxt/schema": "^4.4.2",
 		"rimraf": "^6.1.3"
 	}
 }

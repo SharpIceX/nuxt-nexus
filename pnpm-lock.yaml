@@ -57,6 +57,9 @@ importers:
       '@nuxt/module-builder':
         specifier: ^1.0.2
         version: 1.0.2(@nuxt/cli@3.34.0(@nuxt/schema@4.4.2)(cac@6.7.14)(magicast@0.5.2))(@vue/compiler-core@3.5.31)(esbuild@0.27.4)(typescript@5.9.3)(vue@3.5.30(typescript@5.9.3))
+      '@nuxt/schema':
+        specifier: ^4.4.2
+        version: 4.4.2
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -7095,7 +7098,6 @@ snapshots:
       pathe: 2.0.3
       pkg-types: 2.3.0
       std-env: 4.0.0
-    optional: true
 
   '@nuxt/telemetry@2.7.0(@nuxt/kit@4.3.1(magicast@0.5.2))':
     dependencies:
@@ -11613,8 +11615,7 @@ snapshots:
 
   std-env@3.10.0: {}
 
-  std-env@4.0.0:
-    optional: true
+  std-env@4.0.0: {}
 
   streamx@2.23.0:
     dependencies:
