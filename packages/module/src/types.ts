@@ -1,9 +1,8 @@
 import type { Rollup } from 'vite';
 import type { PageMeta } from 'nuxt/app';
 
-// TODO ? 可能 IDE 的智能提示会失效，但可能仍可进行`跳转到类型定义`
-type NexusPageMeta = Omit<PageMeta, 'meta' | '_sync' | 'file'> & {
-	[key: string]: unknown;
+type NexusPageMeta = {
+	[K in keyof PageMeta as K extends 'meta' | '_sync' | 'file' ? never : K]: PageMeta[K];
 };
 
 interface LoaderOption {
@@ -17,7 +16,7 @@ interface LoaderOption {
 	 * include: "md"
 	 *
 	 * // Multiple patterns
-	 * include: ["md"], "adoc"]
+	 * include: ["md", "adoc"]
 	 * ```
 	 */
 	extensions: string | string[];
