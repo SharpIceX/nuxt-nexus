@@ -9,6 +9,12 @@
 		},
 		{
 			"path": "./packages/playground-vite/tsconfig.json"
+		},
+		{
+			"path": "./packages/playground-webpack/tsconfig.json"
+		},
+		{
+			"path": "./packages/playground-rspack/tsconfig.json"
 		}
 	]
 }
