@@ -27,8 +27,7 @@
 	],
 	"scripts": {
 		"clean": "rimraf ./dist",
-		"build": "nuxt-module-build build",
-		"postinstall": "nuxt-module-build prepare"
+		"build": "nuxt-module-build build"
 	},
 	"dependencies": {
 		"@nuxt/kit": "^4.3.1",
