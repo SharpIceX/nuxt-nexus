@@ -8,7 +8,7 @@
 	"types": "./dist/module.d.mts",
 	"repository": "github:SharpIceX/nuxt-nexus",
 	"homepage": "https://github.com/SharpIceX/nuxt-nexus",
-	"description": "Turn any file format into a Nuxt page with custom compilers and Nuxt 4 metadata pre-scanning support ",
+	"description": "Transform any file into a Nuxt page with custom compilers and Nuxt metadata pre-scanning.",
 	"keywords": [
 		"nuxt"
 	],
@@ -23,7 +23,8 @@
 	},
 	"files": [
 		"./dist",
-		"./LICENSE"
+		"./LICENSE",
+		"./README.md"
 	],
 	"scripts": {
 		"clean": "rimraf ./dist",
