@@ -3,6 +3,7 @@ import { defineBuildConfig } from 'unbuild';
 export default defineBuildConfig({
 	clean: true,
 	sourcemap: true,
+	entries: ['./src/module'],
 	rollup: {
 		emitCJS: true,
 		cjsBridge: true,

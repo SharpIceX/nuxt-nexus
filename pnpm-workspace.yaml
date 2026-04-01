@@ -2,6 +2,14 @@ shellEmulator: true
 shamefullyHoist: true
 disallowWorkspaceCycles: true
 
+# TODO 依赖锁定
+overrides:
+  nuxt: '4.3.1'
+  nuxt-kit: '4.3.1'
+  '@nuxt/rspack-builder': '4.3.1'
+  '@nuxt/webpack-builder': '4.3.1'
+  '@nuxt/vite-builder': '4.3.1'
+
 packages:
   - packages/**
 

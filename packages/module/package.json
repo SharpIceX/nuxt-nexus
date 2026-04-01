@@ -9,6 +9,13 @@
 	"repository": "github:SharpIceX/nuxt-nexus",
 	"homepage": "https://github.com/SharpIceX/nuxt-nexus",
 	"description": "Transform any file into a Nuxt page with custom compilers and Nuxt metadata pre-scanning.",
+	"exports": {
+		".": {
+			"types": "./dist/module.d.mts",
+			"import": "./dist/module.mjs",
+			"require": "./dist/module.cjs"
+		}
+	},
 	"keywords": [
 		"nuxt"
 	],
@@ -43,7 +50,6 @@
 	},
 	"devDependencies": {
 		"@nuxt/module-builder": "^1.0.2",
-		"@nuxt/schema": "^4.4.2",
 		"rimraf": "^6.1.3"
 	}
 }
