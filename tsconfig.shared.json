@@ -2,7 +2,6 @@
 	"compilerOptions": {
 		/* 基础配置 */
 		"pretty": true,
-		"types": ["node"],
 
 		/* 构建 */
 		"sourceMap": true,

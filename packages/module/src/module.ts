@@ -24,6 +24,9 @@ export default defineNuxtModule<ModuleOptions>({
 		// 没有 loader 就是没启用
 		if (!loaders?.length) return;
 
+		// 跳过类型生成时
+		if (nuxt.options._prepare) return;
+
 		// 整理出 includes
 		const includesSet = new Set<string>();
 		for (const [index, loader] of loaders.entries()) {

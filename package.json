@@ -18,7 +18,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"format": "prettier . --write",
-		"postinstall": "pnpm --filter nuxt-nexus exec nuxt-module-build prepare"
+		"postinstall": "pnpm --filter nuxt-nexus run dev:prepare"
 	},
 	"devDependencies": {
 		"@nuxt/eslint-config": "^1.15.2",
