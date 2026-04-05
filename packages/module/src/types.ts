@@ -35,7 +35,7 @@ interface LoaderOption {
 	resolvePagesRoutes?: (code: string, id: string) => NexusPageMeta | Promise<NexusPageMeta>;
 
 	/**
-	 * Transformation Hook: Invoked during the build phase (Vite/Webpack).
+	 * Transformation Hook: Invoked during the build phase.
 	 * Responsible for converting non-standard formats (like Markdown) into
 	 * standard Vue Single File Component (SFC) code.
 	 *

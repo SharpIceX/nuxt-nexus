@@ -7,7 +7,6 @@ export default createConfigForNuxt({
 		stylistic: true,
 	},
 	dirs: {
-		// 可能需要加入 Webpack 或 Rspack
 		src: ['./packages/playground-common', './packages/playground-vite'],
 	},
 }).append(eslintConfigPrettier, {

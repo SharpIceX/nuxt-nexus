@@ -76,28 +76,6 @@ export default defineNuxtModule<ModuleOptions>({
 			nuxt.options.vite.vue.include = [...new Set([...includeArray, ...includesRegExp])];
 		}
 
-		/*
-		// Webpack 构建器
-		if (nuxt.options.builder === '@nuxt/webpack-builder') {
-			nuxt.hook('webpack:config', (configs) => {
-				for (const config of configs) {
-					// TODO
-				}
-			});
-		}
-
-		// TODO ! 上下这两个也许可以合并
-
-		// Rspack 构建器
-		if (nuxt.options.builder === '@nuxt/rspack-builder') {
-			nuxt.hook('rspack:config', (configs) => {
-				for (const config of configs) {
-					// TODO
-				}
-			});
-		}
-		*/
-
 		// 元数据扫描
 		nuxt.addHooks(createScanPageMetaHook(options, includesSet));
 
@@ -105,8 +83,6 @@ export default defineNuxtModule<ModuleOptions>({
 		nuxt.hook('modules:done', () => {
 			addBuildPlugin({
 				vite: () => createNexusTransformPlugin(options, includesSet).vite(options),
-				// webpack: () => createNexusTransformPlugin(options, includesSet).webpack(options),
-				// rspack: () => createNexusTransformPlugin(options, includesSet).rspack(options),
 			});
 		});
 	},
