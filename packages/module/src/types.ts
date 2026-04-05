@@ -1,8 +1,10 @@
 import type { Rollup } from 'vite';
-import type { PageMeta } from 'nuxt/app';
+import type { NuxtHooks } from 'nuxt/schema';
+
+type NuxtPage = Parameters<NuxtHooks['pages:resolved']>[0][number];
 
 type NexusPageMeta = {
-	[K in keyof PageMeta as K extends 'meta' | '_sync' | 'file' ? never : K]: PageMeta[K];
+	[K in keyof NuxtPage as K extends 'meta' | '_sync' | 'file' ? never : K]: NuxtPage[K];
 };
 
 interface LoaderOption {
