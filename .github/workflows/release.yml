@@ -38,7 +38,7 @@ jobs:
 
       - name: Build Module
         working-directory: ./packages/module
-        run: pnpm run generate
+        run: pnpm run build
         env:
           NODE_ENV: production
 
