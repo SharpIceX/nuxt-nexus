@@ -1,5 +1,5 @@
 <template>
-	<p>这是首页</p>
+	<p>My Home</p>
 </template>
 
 <script lang="ts" setup>
