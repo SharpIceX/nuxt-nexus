@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
 				resolvePagesRoutes: (code: string, id: string) => {
 					return {
-						title: code.split('\n')[0],
+						title: code.split('\n')[0] || 'Not Ttitle',
 						description: id,
 					};
 				},
