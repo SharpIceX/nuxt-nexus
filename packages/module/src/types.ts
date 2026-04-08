@@ -1,11 +1,30 @@
 import type { Rollup } from 'vite';
+import type { RouteMeta } from 'vue-router';
 import type { NuxtHooks } from 'nuxt/schema';
 
-type NuxtPage = Parameters<NuxtHooks['pages:resolved']>[0][number];
+/**
+ * Extract the individual page object type from the 'pages:resolved' Nuxt hook.
+ */
+type RawNuxtPage = Parameters<NuxtHooks['pages:resolved']>[0][number];
 
-type NexusPageMeta = {
-	[K in keyof NuxtPage as K extends 'meta' | '_sync' | 'file' ? never : K]: NuxtPage[K];
+/**
+ * Basic route properties (path, name, alias, etc.) from NuxtPage,
+ * excluding internal and recursive fields.
+ */
+type NexusRouteBase = {
+	[K in keyof RawNuxtPage as K extends 'meta' | '_sync' | 'file' ? never : K]?: RawNuxtPage[K] | undefined;
 };
+
+/**
+ * Standard Vue Router metadata (layout, middleware, etc.),
+ * made partial to ensure compatibility with strict optional types.
+ */
+type NexusStandardMeta = Partial<RouteMeta>;
+
+type NexusPageMeta = NexusRouteBase &
+	NexusStandardMeta & {
+		[key: string]: unknown;
+	};
 
 interface LoaderOption {
 	/**
