@@ -11,7 +11,7 @@ export default defineNuxtModule<ModuleOptions>({
 		name: 'nuxt-nexus',
 		configKey: 'nexus',
 		compatibility: {
-			nuxt: '^4.0.0',
+			nuxt: '>=4.0.0',
 			builder: {
 				webpack: false,
 				rspack: false,
